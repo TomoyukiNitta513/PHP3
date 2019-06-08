@@ -20,7 +20,7 @@
  $fruits = array('grape', 'melon', 'apple', 'peach', 'orange');
  foreach ($fruits as $value) {
      echo $value;
-     echo "<br>";
+     echo "\n";
  }
  
  // 課題４
@@ -28,7 +28,7 @@
  for ($i = 1;$i <= 100; $i ++) {
      if ($i % 5 == 0) {
      echo $i;
-     echo "<br>";   
+     echo "\n";   
      }
  }
 ?>
