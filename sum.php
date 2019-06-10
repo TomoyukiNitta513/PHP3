@@ -14,21 +14,19 @@
     f(9,97);
     
 // 課題３
-   function ary() {
-       $arr = [1,3,5,7,9];
-       $array = 1;
+   function ary($arr) {
+       $result = 1;
        foreach ($arr as $value) {
-           $array *= $value;
+           $result *= $value;
        }
-       echo $array;
+       echo $result;
    }
-    ary();
+    ary([1,3,5,7,9,]);
         
 // 課題４
-    function max_array(){
+    function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
-    $arr = [10,7,5,3,12];
-    $max_number = 0;
+    $max_number = $arr[0];
      foreach ($arr as $a) {
  //どうしたらいいかわからない・・・・
         if ($max_number < $a) {
@@ -37,7 +35,7 @@
      }
      echo $max_number;
      }
-     max_array();
+     max_array([4,7,10,12,2]);
  
 // 課題５
     $text = '<p>テストです</p><!-- Comment --> <a href="#fragment">テスト</a>';
